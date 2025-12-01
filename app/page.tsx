@@ -93,21 +93,9 @@ export default function Page() {
         }
     }
 
-    return (
-        <main className="min-h-screen flex items-center justify-center bg-black">
-            <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{
-                    backgroundImage:
-                        "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.7)), url('/lead-the-way.png'), url('/lead-the-way.jpg')",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                }}
-                aria-hidden
-            />
-
-            <div className="relative z-10 w-full max-w-5xl mx-4 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-r from-black/60 via-slate-900/60 to-black/60 backdrop-blur">
+  return (
+    <main className="min-h-screen flex items-center justify-center" style={{ background: "linear-gradient(135deg, #001E60 0%, #000000 100%)" }}>
+      <div className="relative z-10 w-full max-w-5xl mx-4 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-r from-black/60 via-slate-900/60 to-black/60 backdrop-blur">
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     <section className="p-8 md:p-12 text-white flex flex-col justify-center gap-6">
                         <h1 className="text-3xl sm:text-4xl font-bold">Membership Portal — Member Link</h1>
