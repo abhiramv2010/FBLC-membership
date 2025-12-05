@@ -92,31 +92,20 @@ export default function Page() {
             setLoading(false);
         }
     }
-    // Scanning for responses from backend
-    const fetchData = async () => {
-        try {
-            const response = await fetch('/api/your-endpoint');
 
-            if (response.ok) {
-            console.log("Backend confirmed 200 OK status.");
-
-            const data = await response.json();
-            console.log("Here is the data received:", data);
-
-
-            } else {
-            console.error(``);
-            }
-
-        } catch (error) {
-            // Handle network errors or issues with the fetch call itself
-            console.error("A network or fetch error occurred:", error);
-        }
-    };
-
-    // Returning page
     return (
         <main className="min-h-screen flex items-center justify-center bg-black">
+            <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{
+                    backgroundImage:
+                        "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.7)), url('/lead-the-way.png'), url('/lead-the-way.jpg')",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                }}
+                aria-hidden
+            />
 
             <div className="relative z-10 w-full max-w-5xl mx-4 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-r from-black/60 via-slate-900/60 to-black/60 backdrop-blur">
                 <div className="grid grid-cols-1 md:grid-cols-2">
